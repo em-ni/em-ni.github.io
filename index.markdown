@@ -19,5 +19,8 @@ layout: page
 ![](/media/istct.jpeg){: style="float: left" width="100px"}
 
 Ciao! I am a PhD candidate in Surgical Robotics at UNSW, Sydney. 
-Before reaching Australia I was living in Rome, Italy, the city where I was born. Here I worked as a Robotics Software Engineer at Medlogix to implement autonomous robotics systems in the hyperthermia treatment for fighting cancer with technology. 
+
+Before reaching Australia I was living in Rome, Italy, the city where I was born. 
+Here I worked as a Robotics Software Engineer at Medlogix to implement autonomous robotics systems in the hyperthermia treatment for fighting cancer with technology. 
+
 I have a Master's degree in Control & Robotics Engineering and a Bachelor's in Mechanical Engineering both from Sapienza University of Rome.
