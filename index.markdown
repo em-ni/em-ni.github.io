@@ -16,7 +16,7 @@ layout: page
 -->
 
 <!-- TODO: add image -->
-![](/media/istct.jpeg){: style="float: left" width="100px"}
+<!-- ![](/media/ppBB.jpg){: style="float: left" width="100px"} -->
 
 Ciao! I am a PhD candidate in Surgical Robotics at UNSW, Sydney. 
 
