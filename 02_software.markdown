@@ -8,7 +8,7 @@ permalink: /software/
 While I was working at Medlogix I was lucky enough to have the possibility of writing code to move the Panda robot from Franka Emika and experimenting a lot of different control techinques such as FBL, Impedance and Admittance control. [Here](https://github.com/Emanuele-n/panda-win) is a distillated version of the software to run everything on Windows (I know, I know...) while displaying the robot movements on CoppeliaSim. 
 One day I asked [chatGPT](https://chat.openai.com/) to write the parametric Cartesian equations of an heart and I made the robot follow the trajectory, basically I am just a bridge between two robots. Here is the Panda spreading some love
 <p align="center">
-	<img src="/media/love_trajectory.gif" width="350" height="300"/>
+	<img src="/media/love_trajectory.gif"/>
 </p>
 
 ## PCC Soft Robots
