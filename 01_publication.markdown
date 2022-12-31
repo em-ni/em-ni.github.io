@@ -4,6 +4,16 @@ title: Publication
 permalink: /publication/
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PQFC01D0LX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PQFC01D0LX');
+</script>
+
 [MS Thesis](https://drive.google.com/file/d/1wzDfhW_K8pfrNxatST2SaEYtEBRyG7u8/view?usp=share_link) about Modelling and Control of Soft Robots, comments are welcome!
 
 <!--## Journal Publications
