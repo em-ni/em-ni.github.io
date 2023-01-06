@@ -3,7 +3,6 @@ layout: page
 title: Software
 permalink: /software/
 ---
-
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQFC01D0LX"></script>
 <script>
