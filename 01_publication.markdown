@@ -44,4 +44,24 @@ American Society of Mechanical Engineers (ASME) 2015 International Design Engine
 \* indicates equal contribution.
 
 
+## Handwritten Notes
+The result of merging lectures and books during University courses. <br/>
+Don't take them too seriously there are a lot of mistakes...
+
+[Autonomous and Mobile Robotics](https://drive.google.com/file/d/17qwh2VDUODDKxM6EjkCdbQRFlMlvpFBP/view?usp=sharing)
+
+[Digital Control Systems](https://drive.google.com/file/d/1GpQONZDdT82_uWUjdR8oz9yCbGSkSszh/view?usp=sharing)
+
+[Machine Learning](https://drive.google.com/file/d/1zNH9AWB0qaZCberJiv6VCj83kGUtMaDu/view?usp=sharing)
+
+[Multivariable Feedback Control](https://drive.google.com/file/d/1An0M_cC_tvQCVCPxzhSSTdu1S19QINQ0/view?usp=sharing)
+
+[Optimal Control](https://drive.google.com/file/d/1cEd83bJlaja3IT5VLlkD9ISX6HgJ6jZ-/view?usp=sharing)
+
+[Optimal Filtering](https://drive.google.com/file/d/1zqPR9cejaO7NE49YUVkiOiOCK7cJ4WOo/view?usp=sharing)
+
+[Nonlinear Systems and Control pt.1](https://drive.google.com/file/d/1c4Io4Wxw7-lPpgRnyhdqN-FgKZ6MvVvV/view?usp=sharing)
+
+[Nonlinear Systems and Control pt.2](https://drive.google.com/file/d/12gwOeIkUW2LhIJzwzYgzMhoq6exdIfIn/view?usp=sharing)
+
 
