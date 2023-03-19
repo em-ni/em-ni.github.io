@@ -17,7 +17,7 @@ layout: page
 <!-- TODO: add image -->
 <!-- ![](/media/ppBB.jpg){: style="float: left" width="100px"} -->
 
-Ciao! I am a PhD candidate in Surgical Robotics at UNSW, Sydney. 
+Ciao! I am a PhD candidate in Surgical Robotics at UNSW, Sydney. My research interests are Soft Robotics, Computer Vision, Reinforcement Learning and MPC, and their application to surgical robotics.
 
 Before reaching Australia I was living in Rome, Italy, the city where I was born. 
 Here I worked as a Robotics Software Engineer at Medlogix to implement autonomous robotics systems in the hyperthermia treatment for fighting cancer with technology. 
