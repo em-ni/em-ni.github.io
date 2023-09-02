@@ -21,7 +21,7 @@
 title: Emanuele Nicotra
 email: manunicotra97@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  PhD canditate at UNSW, Sydney. Research interests are in the areas of robotics, control theory and machine learning.
+  PhD canditate at UNSW, Sydney
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb

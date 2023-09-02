@@ -1,0 +1,5 @@
+# How to install and run
+1. install Jekyll from [here](https://jekyllrb.com/docs/installation/#requirements)
+2. sudo gem install bundler
+3. bundle config set --local path 'vendor/bundle'
+4. bundle install
