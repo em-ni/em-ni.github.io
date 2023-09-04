@@ -14,7 +14,6 @@ permalink: /robotics/
 </script>
 
 ## Panda for Hyperthermia
-
 While working at [Medlogix](https://www.albahyperthermia.com/) I was lucky enough to have the possibility of writing code for the Panda robot from Franka Emika. Here I experimented with many different control techniques such as FBL, impedance and admittance control, to find the best solution for curing cancer with hyperthermia!. [Here](https://github.com/Emanuele-n/panda-win) is a distillated version of the software to run everything on Windows (I know, I know...) while displaying the robot movements on CoppeliaSim. 
 One day I asked chatGPT to write the parametric Cartesian equations of an heart and I made the robot follow the trajectory, basically I am just a bridge between two robots. Here is the Panda spreading some love
 <p align="center">
