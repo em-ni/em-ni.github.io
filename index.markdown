@@ -15,7 +15,11 @@ layout: page
 </script>
 
 <!-- TODO: add image -->
-<!-- ![](/media/ppBB.jpg){: style="float: left" width="100px"} -->
+![](/media/pp.png){: style="float: left; margin-right: 20px;" width="180px"} 
+
+
+
+
 
 Ciao! I am a PhD candidate in Surgical Robotics at UNSW, Sydney. My research interests are Soft Robotics, Computer Vision, Reinforcement Learning and MPC, and their application to surgical robotics.
 
