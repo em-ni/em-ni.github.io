@@ -15,24 +15,31 @@ permalink: /publications/
 
 [MS Thesis](https://drive.google.com/file/d/1wzDfhW_K8pfrNxatST2SaEYtEBRyG7u8/view?usp=share_link) about Modelling and Control of Soft Robots, comments are welcome!
 
-<!--## Journal Publications
+## Journal Publications
 ___
+**Soft Wearable Haptic Display and Flexible 3D Force Sensor for Teleoperated Surgical Systems**<br/>
+*MT Thai, J Davies et al.*<br/>
+Advanced Sensor Research
 
-
-
-
-\* indicates equal contribution.
--->
+**Robotic Cardiac Compression Device Using Artificial Muscle Filaments for the Treatment of Heart Failure**<br/>
+*PT Phan, J Davies et al.*<br/>
+Advanced Intelligent Systems
 
 ## Conference Publications
 ___
-**Hydraulically Actuated Soft Tubular Gripper**  
-*J. Davies et al.*    
+**A Soft Micro-Robotic Catheter for Aneurysm Treatment: A Novel Design and Enhanced Euler-Bernoulli Model with Cross-Section Optimization**<br/>
+*E. Nicotra, CC Nguyen et al.* <br/>
+IEEE International Conference on Robotics and Automation (ICRA) (2024)
+
+**Hydraulically Actuated Soft Tubular Gripper**  <br/>
+*J. Davies, PT Phan et al.*    <br/>
 IEEE International Conference on Robotics and Automation (ICRA) (2022)
 
-**Bidirectional Soft Robotic Catheter for Arrhythmia Treatment**  
-*C. C. Nguyen et al.*    
+**Bidirectional Soft Robotic Catheter for Arrhythmia Treatment**  <br/>
+*CC Nguyen, T Teh et al.*    <br/>  
 IEEE International Conference on Robotics and Automation (ICRA) (2022)
+
+
 
 
 <!--
