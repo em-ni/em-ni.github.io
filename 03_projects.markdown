@@ -17,7 +17,7 @@ Here are some additional projects I did during my free time.
 
 ## Networth App
 A minimal app to track your networth. It is a simple way to keep track of your assets and see how your networth changes over time. It uses the Alpha Vantage API to get real-time prices and it's connected to Google Drive to upload your data on the cloud. It's also possible to automatically generate and share an Excel table of your assets.  It is built with Flutter and Firebase. <br/>
-Download it from [Google Play Store](https://networth-app-1.web.app/) 
+Download it from [Google Play Store](https://play.google.com/store/apps/details?id=com.networth.networth) 
 <div style="display: flex; flex-wrap: wrap; justify-content: center;">
     <img src="/media/networth1.jpg" style="max-width: 30%; margin: 5px;"/>
     <img src="/media/networth2.jpg" style="max-width: 30%; margin: 5px;"/>
