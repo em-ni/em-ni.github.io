@@ -18,25 +18,25 @@ permalink: /publications/
 ## Journal Publications
 ___
 **Soft Wearable Haptic Display and Flexible 3D Force Sensor for Teleoperated Surgical Systems**<br/>
-*MT Thai, J Davies et al.*<br/>
+*MT Thai et al.*<br/>
 Advanced Sensor Research
 
 **Robotic Cardiac Compression Device Using Artificial Muscle Filaments for the Treatment of Heart Failure**<br/>
-*PT Phan, J Davies et al.*<br/>
+*PT Phan et al.*<br/>
 Advanced Intelligent Systems
 
 ## Conference Publications
 ___
 **A Soft Micro-Robotic Catheter for Aneurysm Treatment: A Novel Design and Enhanced Euler-Bernoulli Model with Cross-Section Optimization**<br/>
-*E. Nicotra, CC Nguyen et al.* <br/>
+*E. Nicotra et al.* <br/>
 IEEE International Conference on Robotics and Automation (ICRA) (2024)
 
 **Hydraulically Actuated Soft Tubular Gripper**  <br/>
-*J. Davies, PT Phan et al.*    <br/>
+*J. Davies et al.*    <br/>
 IEEE International Conference on Robotics and Automation (ICRA) (2022)
 
 **Bidirectional Soft Robotic Catheter for Arrhythmia Treatment**  <br/>
-*CC Nguyen, T Teh et al.*    <br/>  
+*CC Nguyen et al.*    <br/>  
 IEEE International Conference on Robotics and Automation (ICRA) (2022)
 
 
@@ -46,9 +46,10 @@ IEEE International Conference on Robotics and Automation (ICRA) (2022)
 **A Cooperative Driving NLMPC for Real Time Collision Avoidance**      
 *U. Rosolia, F. Braghin, E. Sabbioni, A.G. Alleyne, and S. De Bruyne*      
 American Society of Mechanical Engineers (ASME) 2015 International Design Engineering Technical Conferences and Computers and Information in Engineering Conference, 2015
+\* indicates equal contribution.
 -->
 
-\* indicates equal contribution.
+
 
 
 ## Handwritten Notes
