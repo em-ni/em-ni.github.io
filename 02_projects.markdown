@@ -13,7 +13,7 @@ permalink: /projects/
   gtag('config', 'G-PQFC01D0LX');
 </script>
 
-Here are some additional projects I did during my free time. 
+Here are some additional projects I did during my free time. Other mobile apps I developed can be found on my Google Play Store and App Store pages.
 
 ## Networth App
 A minimal app to track your networth. It is a simple way to keep track of your assets and see how your networth changes over time. It uses the Alpha Vantage API to get real-time prices and it's connected to Google Drive to upload your data on the cloud. It's also possible to automatically generate and share an Excel table of your assets.  It is built with Flutter and Firebase. <br/>
@@ -30,7 +30,7 @@ Download it from [Google Play Store](https://play.google.com/store/apps/details?
 
 <br/>
 ## Guzzi Dingo
-With one of my best friend we bought an old and broken Guzzi Dingo and we restored it. It was a lot of fun and we learned a lot about hands-on mechanics. 
+With one of my best friends we bought an old and broken Guzzi Dingo and we restored it. It was a lot of fun and we learned a lot about hands-on mechanics. 
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center;">
     <img src="/media/dingo/volantino1.png" style="max-width: 20%; margin: 5px;"/>

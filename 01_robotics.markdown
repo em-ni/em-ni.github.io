@@ -32,21 +32,61 @@ permalink: /robotics/
 - contact force model
  -->
 
+Here are some of the projects I've been involved in the field of Control, Robotics and Machine Learning. 
+
 ## Robotics & Control Projects
+- [Vision-Based Robotic Bronchoscope Localization and Cancer Detection](#vision-based-robotic-bronchoscope-localization-and-cancer-detection)
+- [Contact Force Model for Soft Robots](#contact-force-model-for-soft-robots)
 - [Panda for Hyperthermia](#panda-for-hyperthermia)
 - [MPC for Soft Robots](#mpc-for-soft-robots)
 - [Motion Planning with RRT + CBF](#motion-planning-with-rrt--cbf)
 - [Aircraft Landing Control](#aircraft-landing-control)
 - [Trajectory Tracking of a KUKA LBR 7R](#trajectory-tracking-of-a-kuka-lbr-7r)
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+## Vision-Based Robotic Bronchoscope Localization and Cancer Detection <span id="vision-based-robotic-bronchoscope-localization-and-cancer-detection" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>]() </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>]()</span>
+work in progress...
+
+## Contact Force Model for Soft Robots <span id="contact-force-model-for-soft-robots" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/Emanuele-n/sim) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>]()</span>
+Soft Robots find the best application to robotic surgery, where the compliance of the structure is a key feature to ensure the safety of the patient. However, the compliance of the robot makes the control more challenging, especially when the robot is in contact with the environment and it doesn't have force sensors. <br/>
+Here I developed a contact force model for a soft continuum robot, which is able to predict the contact force and the deformation of the robot when in contact with an obstacle. <br/>
+<p align="center">
+	<img src="/media/robot_force.png" height="150" height="200"/>
+	<img src="/media/sofa_force_sim.gif" height="100" height="200"/>
+	<!-- <img src="/media/force_model_vs_data.png" height="150" height="200"/> -->
+</p>
+
+### Short Summary
+**Goal**: Develop a contact force model for a soft robot in contact with the environment
+- First, start with modelling the actuators to get the robot dependent mapping, which gives the robot **kinematics** from the pressure input, together with solving a shape optimization problem to find the best geometric parameters (e.g. shape of the deformed tube)
+<p align="center">
+  <span>  $$  T( q (p) ) =   \small
+    \begin{bmatrix}            
+        -\sin{q (p)} & \cos{q (p)} & 0 & L^o  \dfrac{(1 - \cos{q (p)})}{q (p)}\\[2.5mm]
+        \cos{q (p)} & \sin{q (p)} & 0 & L^o \dfrac{\sin{q (p)}}{q (p)}\\[2.5mm]
+        0 & 0 & 1 & 0\\[2.5mm]
+        0 & 0 & 0 & 1\\[2.5mm]
+    \end{bmatrix}
+    \normalsize  $$</span><br>
+</p>
+- Then, use the **PCC** model to get the robot independent mapping which gives the robot **dynamics** and the **static** equilibrium 
+<p align="center">
+  <span>  $$  G(q) + Kq = u_{\tau}(p) +  J^T (q) \gamma_e $$</span><br>
+</p>
+- Finally, combine the static equilibrium with the axial force and tune the final coefficients to get the **contact force model**
+<p align="center">
+  <span>  $$  F_{c} = F_{\kappa} + \dfrac{\alpha F_{\epsilon} p}{q} + \beta $$</span><br>
+</p>
+
+<small> Last Update: August, 2024 </small>
 
 
 ## Panda for Hyperthermia <span id="panda-for-hyperthermia" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/Emanuele-n/panda-win)</span>
 While working at [Medlogix](https://www.albahyperthermia.com/) I had the possibility of writing the code for controlling the [Panda](https://robodk.com/robot/Franka/Emika-Panda) robot from Franka Emika. Here I experimented with many different control techniques such as FBL, impedance and admittance control, to find the best solution for curing cancer with hyperthermia! <br/>
-One day I asked chatGPT to write the parametric Cartesian equations of an heart and I made the robot follow the trajectory, basically I am just a bridge between two robots. <br/> 
-Here is the Panda spreading some love
+One day I asked chatGPT to write the parametric Cartesian equations of an heart and I made the robot follow the trajectory, basically I am just a bridge between two robots. 
 <p align="center">
-	<img src="/media/love_trajectory.gif"/>
+	<img src="/media/love_trajectory.gif"/><br/> 
+Here is the Panda spreading some love
 </p>
 
 ### Short Summary 
@@ -77,10 +117,11 @@ Here are some examples of trajectory tracking and set-point regulation of a 3-DO
 
 <p align="center">
 	<img src="/media/track_plus_alpha.gif" width="350" height="300"/>
-	<img src="/media/reg_obstacle.gif" width="350" height="300"/>
+	<img src="/media/reg_obstacle.gif" width="350" height="300"/><br>
+	Top-left is fully actuated; top-right is underactuated on the last CC segment; bottom-left shows how it is possible to control also the orientation; bottom-right is an attempt of sliding on an obstacle to exploit the compliance structure of the robot.
 </p>
 
-Top-left is fully actuated; top-right is underactuated on the last CC segment; bottom-left shows how it is possible to control also the orientation; bottom-right is an attempt of sliding on an obstacle to exploit the compliance structure of the robot.
+
 
 ### Short Summary
 **Goal**: Executing tasks with a Soft Continuum Robot

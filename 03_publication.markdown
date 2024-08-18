@@ -13,30 +13,42 @@ permalink: /publications/
   gtag('config', 'G-PQFC01D0LX');
 </script>
 
-[MS Thesis](https://drive.google.com/file/d/1wzDfhW_K8pfrNxatST2SaEYtEBRyG7u8/view?usp=share_link) about Modelling and Control of Soft Robots, comments are welcome!
+[MS Thesis](https://drive.google.com/file/d/1wzDfhW_K8pfrNxatST2SaEYtEBRyG7u8/view?usp=share_link) about Modelling and Model Predictive Control of Soft Robots, comments are welcome!
 
-## Journal Publications
+## First Author Publications
 ___
-**Soft Wearable Haptic Display and Flexible 3D Force Sensor for Teleoperated Surgical Systems**<br/>
-*MT Thai et al.*<br/>
-Advanced Sensor Research
+**Vision-Based Robotic Bronchoscope Localization and Cancer Detection**<br/>
+*E. Nicotra et al.*<br/>
+Not submitted yet (2024)
 
-**Robotic Cardiac Compression Device Using Artificial Muscle Filaments for the Treatment of Heart Failure**<br/>
-*PT Phan et al.*<br/>
-Advanced Intelligent Systems
+**Soft Robotic Catheter for Safe Aneurysm Treatment with Enhanced Kinematics and Contact Force Model**<br/>
+*E. Nicotra et al.* <br/>
+IEEE Transactions on Medical Robotics and Bionics (2024)
 
-## Conference Publications
-___
 **A Soft Micro-Robotic Catheter for Aneurysm Treatment: A Novel Design and Enhanced Euler-Bernoulli Model with Cross-Section Optimization**<br/>
 *E. Nicotra et al.* <br/>
 IEEE International Conference on Robotics and Automation (ICRA) (2024)
+
+**Model Predictive Control for the Execution of Tasks in Soft Robots**<br/>
+*E. Nicotra et al.* <br/>
+IEEE Conference on Decision and Control (2022).
+
+## Co-Author Publications
+___
+**Soft Wearable Haptic Display and Flexible 3D Force Sensor for Teleoperated Surgical Systems**<br/>
+*M.T. Thai et al.*<br/>
+Advanced Sensor Research (2024)
+
+**Robotic Cardiac Compression Device Using Artificial Muscle Filaments for the Treatment of Heart Failure**<br/>
+*P.T. Phan et al.*<br/>
+Advanced Intelligent Systems (2024)
 
 **Hydraulically Actuated Soft Tubular Gripper**  <br/>
 *J. Davies et al.*    <br/>
 IEEE International Conference on Robotics and Automation (ICRA) (2022)
 
 **Bidirectional Soft Robotic Catheter for Arrhythmia Treatment**  <br/>
-*CC Nguyen et al.*    <br/>  
+*C.C. Nguyen et al.* <br/>
 IEEE International Conference on Robotics and Automation (ICRA) (2022)
 
 
