@@ -30,7 +30,6 @@ permalink: /robotics/
 <!-- TODO: add more projects:
 - vision based robot localization
 - contact force model
-- Add desired output where missing
  -->
 
 ## Robotics & Control Projects
@@ -106,7 +105,7 @@ Top-left is fully actuated; top-right is underactuated on the last CC segment; b
 	<p align="center">
 	<span>$$ l(x,u) = ||x(k)||^2_Q + ||u(k)||^2_Q $$</span><br>
 	</p>
-	However, I wanted to try to reduce the rigidy of the robot, which is a common issue when applying standard control techniques to soft robots. So I tried to replace the constant weight multiplying the control effort with a row vector  $$ s = \left(\!\begin{array}{cccc}s_1  &  s_2  & \cdot \cdot \cdot & s_m \end{array}\!\right)^{T} $$ of the same dimension of the control vector, where $$ s_i $$ is the $$i$$-th input weight, yelding to the cost function
+	However, I wanted to try to reduce the rigidy of the robot, which is a common issue when applying standard control techniques to soft robots. So I tried to replace the constant weight multiplying the control effort with a row vector  $$ s = [s_1 ,  s_2,   \cdot \cdot \cdot , s_m]^{T} $$ of the same dimension of the control vector, where $$ s_i $$ is the $$i$$-th input weight, yelding to the cost function
 	<p align="center">
 	<span>$$\begin{array}{c}
 		J_{ts}(x,u) = 
@@ -182,12 +181,43 @@ Here are some examples of the application of the algorithm in four scenes with i
   </span><br>
 </p>
 - The control system is designed to dived the problem in two pahses: the **approach** and the **touchdown**. <br/>
-The first one, aims to regulate the height $$z_d $$ and the angle $$\theta_d$$ by means of the lift force $$ L $$ and it is controlled by a **PID** controller after performing a **Feedback Linearization**. <br/>
+The first one, aims to regulate the height $$z_d $$ and the angle $$\theta_d$$ by means of the lift force $$ L $$ and it is controlled by a **PID** controller joint with a **Feedback Linearization**. <br/>
 The second one aim to regulate the horizontal velocity $$ \dot{x} $$ and the angle $$\theta_d$$ by using the breaks $$  C_r, C_f $$ and the active suspension $$ u_{\theta}$$, this phase is controlled with a Suspension Variational Feedback Controller.
 
 <small> Last Update: July, 2021 </small>
 
-## Trajectory Tracking of a KUKA LBR 7R <span id="trajectory-tracking-of-a-kuka-lbr-7r" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>]()</span>
+## Trajectory Tracking of a KUKA LBR 7R <span id="trajectory-tracking-of-a-kuka-lbr-7r" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/Emanuele-n/Robot-Learning-Control)</span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>](https://github.com/Emanuele-n/Robot-Learning-Control/blob/main/Robotics_II.pdf) </span>
+<p align="center">
+	<img src="/media/kuka.png" height="150" />
+	<img src="/media/gpr_q1.png" height="200" />
+</p>
+**GOAL**: When performing a Feedback Linearization (FL) there are always mismatches between the model and the real system, the goal of this porject is to use the Gaussian Process Regression (GPR) to learn the mismatch and to improve the tracking performance of the robot. <br/>
+- Robot dynamic **model** 
+<p align="center">
+  <span>  $$ M(q)\ddot{q} + C(q, \dot{q})\dot{q} + G(q) = u $$</span><br>
+</p>
+- The **control** law is obtained by using the FL plus a learned correction factor $$ \delta u $$ from the GPR
+<p align="center">
+  <span>  $$ u = M(q)(\ddot{q} + K_p (q_d - q) + K_d (\dot{q}_d - \dot{q}) ) + C(q, \dot{q})\dot{q} + G(q) + \delta u $$</span><br>
+</p>
+- Training the GPR with the **data** collected from the robot
+<p align="center">
+  <span>  $$ x_i = [q_i , \dot{q}_i , \ddot{q}_i ]$$
+  $$ y_i = \delta u_i $$
+  </span><br>
+  With the training data we can compute the mean and the variance of the prediction. <br>
+  Here we used the radial basis function kernel
+  <span> $$ k(x,x') = \sigma^2 \exp(-\dfrac{1}{2}\norm{x-x'}^2_W) $$</span><br>
+  and the Logarithmic Marginal Likelihood with sparsification as the loss function
+  <span> $$     log\ p(\mathbf{y}|X,\boldsymbol{\theta}) =
+    (n-m)log(\sigma_n)
+    + \sum_{i=1}^m log(l_{M,ii})
+    + \frac{1}{2\sigma^2}(\mathbf{y}^T\mathbf{y} - \boldsymbol{\beta}_I^T\boldsymbol{\beta}_I)
+    + \frac{n}{2} log (2\pi)
+    + \frac{1}{2\sigma^2} trace(K - V^T V) $$</span><br>
+
+
+</p>
 
 <small> Last Update: July, 2020 </small>
 
