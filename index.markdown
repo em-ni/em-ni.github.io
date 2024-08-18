@@ -18,9 +18,9 @@ layout: page
 
 Ciao! I am a PhD candidate in Surgical Robotics at UNSW, Sydney. 
 
-Here are some things that I like: Robotics, Control, Model Predictive Control, Computer Vision, Soft Robotics,Reinforcement Learning and their application to surgical robotics.
+Here are some things that I like: Robotics, Control, Model Predictive Control, Computer Vision, Soft Robotics, Reinforcement Learning and their application to surgical robotics.
 
-Here are some things that I do: research, coding (mostly to move robots and for developing mobile apps), reading (mostly about engineering and a lot about philosophy), writing, playing football and chalisthenics.
+Here are some things that I do: research, coding (mostly to move robots and for developing mobile apps), reading (mostly about engineering and a lot about philosophy), writing, playing football and calisthenics.
 
 
 
