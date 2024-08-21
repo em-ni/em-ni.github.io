@@ -29,23 +29,41 @@ permalink: /robotics/
 
 <!-- TODO: add more projects:
 - vision based robot localization
-- contact force model
+- mfc
+- 
  -->
 
 Here are some of the projects I've been involved in the field of Control, Robotics and Machine Learning. 
 
 ## Robotics & Control Projects
-- [Vision-Based Robotic Bronchoscope Localization and Cancer Detection](#vision-based-robotic-bronchoscope-localization-and-cancer-detection)
-- [Contact Force Model for Soft Robots](#contact-force-model-for-soft-robots)
-- [Panda for Hyperthermia](#panda-for-hyperthermia)
-- [MPC for Soft Robots](#mpc-for-soft-robots)
-- [Motion Planning with RRT + CBF](#motion-planning-with-rrt--cbf)
-- [Aircraft Landing Control](#aircraft-landing-control)
-- [Trajectory Tracking of a KUKA LBR 7R](#trajectory-tracking-of-a-kuka-lbr-7r)
+- PhD Related
+  - [Vision-Based Robotic Bronchoscope Localization and Cancer Detection](#vision-based-robotic-bronchoscope-localization-and-cancer-detection)
+  - [Contact Force Model for Soft Robots](#contact-force-model-for-soft-robots)
+- Work Related
+  - [Panda for Hyperthermia](#panda-for-hyperthermia)
+- Master's Thesis
+  - [MPC for Soft Robots](#mpc-for-soft-robots)
+- Master's Projects
+  - [Motion Planning with RRT + CBF](#motion-planning-with-rrt--cbf)
+  - [Aircraft Landing Control](#aircraft-landing-control)
+  - [Trajectory Tracking of a KUKA LBR 7R](#trajectory-tracking-of-a-kuka-lbr-7r)
+  - [Optimal Control of Covid-19 Pandemic](#optimal-control-of-covid-19-pandemic)
+  - [Control of a discrete time Mass-Spring-Damper system with input delay](#control-of-a-discrete-time-mass-spring-damper-system-with-input-delay)
+  - [Robot learning techniques and MPC for controlling robots with nonlinear flexibility](#robot-learning-techniques-and-mpc-for-set-point-regulation-of-robots-with-nonlinear-flexibility-on-the-joints)
+- Master's Homeworks
+  - [Cooperative attitude synchronization in satellite swarms: a consensus approach](#cooperative-attitude-synchronization-in-satellite-swarms-a-consensus-approach)
+  - [A New Method for the Nonlinear Transformation of Means and Covariances in Filters and Estimators](#a-new-method-for-the-nonlinear-transformation-of-means-and-covariances-in-filters-and-estimators)
+  - [DC-motor and 4-tanks system control with 
+  <span>  $$  H_\infty $$ and $$ \mu $$-synthesis techniques</span>
+](#dc-motor-and-4-tank-system-control)
+  - [Implementation of CNN, LSTM and free design of a neural network architecture](#implementation-of-cnn-lstm-and-free-design-of-a-neural-network-architecture)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 ## Vision-Based Robotic Bronchoscope Localization and Cancer Detection <span id="vision-based-robotic-bronchoscope-localization-and-cancer-detection" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>]() </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>]()</span>
 work in progress...
+
+<br><br><br>
 
 ## Contact Force Model for Soft Robots <span id="contact-force-model-for-soft-robots" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/Emanuele-n/sim) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>]()</span>
 Soft Robots find the best application to robotic surgery, where the compliance of the structure is a key feature to ensure the safety of the patient. However, the compliance of the robot makes the control more challenging, especially when the robot is in contact with the environment and it doesn't have force sensors. <br/>
@@ -80,6 +98,7 @@ Here I developed a contact force model for a soft continuum robot, which is able
 
 <small> Last Update: August, 2024 </small>
 
+<br><br><br>
 
 ## Panda for Hyperthermia <span id="panda-for-hyperthermia" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/Emanuele-n/panda-win)</span>
 While working at [Medlogix](https://www.albahyperthermia.com/) I had the possibility of writing the code for controlling the [Panda](https://robodk.com/robot/Franka/Emika-Panda) robot from Franka Emika. Here I experimented with many different control techniques such as FBL, impedance and admittance control, to find the best solution for curing cancer with hyperthermia! <br/>
@@ -103,6 +122,8 @@ Here is the Panda spreading some love
 <small>Last Update: January, 2023</small>  
 
 
+
+<br><br><br>
 
 ## MPC for Soft Robots <span  id="mpc-for-soft-robots" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://www.mathworks.com/matlabcentral/fileexchange/104060-soropcc)</span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>](https://drive.google.com/file/d/1wzDfhW_K8pfrNxatST2SaEYtEBRyG7u8/view?usp=share_link)</span>
 
@@ -166,6 +187,8 @@ Here are some examples of trajectory tracking and set-point regulation of a 3-DO
 <small>Last Update: March, 2024</small>  
 
 
+<br><br><br>
+
 ## Motion Planning with RRT + CBF <span id="motion-planning-with-rrt--cbf" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/Emanuele-n/Enhancing-kinodynamic-RRT-using-CBF-based-steering) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>](https://github.com/Emanuele-n/Enhancing-kinodynamic-RRT-using-CBF-based-steering/blob/main/AMR_report.pdf)</span>
 Here is a project about Probabilistic Motion Planning of Unicyle Mobile Robot using Rapidly-exploring Random Tree (RRT) with Control Barrier Functions (CBF)
 
@@ -202,10 +225,14 @@ Here are some examples of the application of the algorithm in four scenes with i
 
 <small>Last Update: June, 2021</small>
 
+<br><br><br>
+
 ## Aircraft Landing Control <span id="aircraft-landing-control" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/Emanuele-n/Aircraft-Landing-Gear-Simulation-and-Control) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>](https://github.com/Emanuele-n/Aircraft-Landing-Gear-Simulation-and-Control/blob/main/Vehicle_Systems_Dynamics.pdf)</span>
 <p align="center">
 	<img src="/media/landing.png" width="550" />
 </p>
+
+### Short Summary
 **GOAL**: Design a control system for the landing gear of an aircraft to ensure a safe and autonomous landing. 
 - The aircraft is **modeled** as a 7-DOF system with state variable $$x = [ z, z_{wf}, z_{wr}, \theta, x, \omega_{f}, \omega_{r} ]$$. The controlled elements are the elevators, the flaps and the active suspension of the front landing gear, together with the breaks of the rear and front gear, yelding to the control input $$ u = [ L, u_{\theta}, F_{aereo}, C_r, C_f ]$$. 
 <p align="center">
@@ -227,11 +254,15 @@ The second one aim to regulate the horizontal velocity $$ \dot{x} $$ and the ang
 
 <small> Last Update: July, 2021 </small>
 
+<br><br><br>
+
 ## Trajectory Tracking of a KUKA LBR 7R <span id="trajectory-tracking-of-a-kuka-lbr-7r" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/Emanuele-n/Robot-Learning-Control)</span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>](https://github.com/Emanuele-n/Robot-Learning-Control/blob/main/Robotics_II.pdf) </span>
 <p align="center">
 	<img src="/media/kuka.png" height="150" />
 	<img src="/media/gpr_q1.png" height="200" />
 </p>
+
+### Short Summary
 **GOAL**: When performing a Feedback Linearization (FL) there are always mismatches between the model and the real system, the goal of this porject is to use the Gaussian Process Regression (GPR) to learn the mismatch and to improve the tracking performance of the robot. <br/>
 - Robot dynamic **model** 
 <p align="center">
@@ -264,3 +295,203 @@ The second one aim to regulate the horizontal velocity $$ \dot{x} $$ and the ang
 
 
 
+<br><br><br>
+
+## Optimal Control of Covid-19 Pandemic <span id="optimal-control-of-covid-19-pandemic" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://drive.google.com/file/d/1uI6YFrqJ_GbqG4mblhvyfIa9R_5uUN2x/view?usp=sharing)</span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>](https://drive.google.com/file/d/1uoJsdC5bN9xC22uGGpPnZg7gT6mW5ZJL/view?usp=sharing)</span>
+
+<p align="center">
+  <img src="/media/SEIR_plot.png" height="250" />
+  <img src="/media/covid_results.png" height="250" />
+</p>
+
+### Short Summary
+**GOAL**: Design an optimal control strategy to minimize the number of infected and loss people due to the lockdown. <br/>
+- The **model** is a SEIR model $$ x = [S,E,I,R] $$ with the addition of the lockdown control $$ u(t) $$ and health care capacity $$ v(t) $$
+
+<p align="center">
+  <span>  $$ \begin{align*}
+  \frac{dS}{dt} &= n - (1 - u) \beta \frac{S I}{N} - mS \\
+  \frac{dE}{dt} &= (1 - u) \beta \frac{S I}{N} - (\alpha + m)E \\
+  \frac{dI}{dt} &= \alpha E - (\epsilon + \gamma + m + v)I \\
+  \frac{dR}{dt} &= (\gamma + v)I - mR
+  \end{align*}
+  $$
+  </span><br>
+</p>
+
+- The **cost function** used is though to reduce as much as possible the number of infected and exposed, while also avoiding too strict lockdowns and overloading the health care system
+<p align="center">
+  <span>  $$ J = \int_{t_0}^{t_f} \left\{ E(t) + I(t) + \frac{A_1}{2} u^2(t) + \frac{A_2}{2} v^2(t) \right\} dt
+ $$</span><br>
+</p>
+
+- By applying the Pontryagin principle we can find the optimal control law $$ u^* $$ and $$ v^* $$, which are the solution of the Hamiltonian system, and the resulting closed loop system is
+<p align="center">
+  <span>  $$ \begin{align*}
+  S_{i+1} &= \frac{S_i + h n \frac{I_i}{1 + h(m + (1 - u^*_i)\beta \frac{I_i}{N})}}{1 + h m} \\
+  E_{i+1} &= \frac{E_i + h (1 - u^*_i) \beta \frac{S_{i+1} I_i}{N}}{1 + h(\alpha + m)} \\
+  I_{i+1} &= \frac{I_i + h (\alpha E_{i+1})}{1 + h(\epsilon + \gamma + m + v^*_i)} \\
+  R_{i+1} &= \frac{R_i + h ((\gamma + v^*_i) I_{i+1})}{1 + hm} \\
+  \lambda_{n-i-1}^{1} &= \frac{\lambda_{n-i}^{1} + h ((1 - u^*_i) \lambda_{n-i}^{2} \beta \frac{I_{i+1}}{N})}{1 + h d + h(1 - u^*_i) \beta \frac{I_{i+1}}{N}} \\
+  \lambda_{n-i-1}^{2} &= \frac{\lambda_{n-i}^{2} + h(1 + \alpha \lambda_{n-i}^{3})}{1 + h(\alpha + m)} \\
+  \lambda_{n-i-1}^{3} &= \frac{\lambda_{n-i}^{3} + h(1 + \lambda_{n-i}^{1} (1 - u^*_i) \beta \frac{S_{i+1}}{N} + (\gamma + v^*_i) \lambda_{n-i}^{4})}{1 + h(\epsilon + \gamma + d + v^*_i)} \\
+  \lambda_{n-i-1}^{4} &= \frac{\lambda_{n-i}^{4} + h m}{1 + h m} \\
+  M_{i+1} &= (\lambda_{n-i-1}^{1} - \lambda_{n-i}^{1}) \frac{\beta I_{i+1} S_{i+1}}{N A_1} \\
+  r_{i+1} &= (\lambda_{n-i-1}^{3} - \lambda_{n-i}^{4}) \frac{I_{i+1}}{A_2} \\
+  u^*_{i+1} &= \min(1, \max(0, M_{i+1})) \\
+  v^*_{i+1} &= \min(1, \max(0, r_{i+1}))
+  \end{align*}
+  $$
+  </span><br>
+</p>
+
+<small> Last Update: July, 2020 </small>
+
+
+<br><br><br>
+
+## Control of a discrete time Mass-Spring-Damper system with input delay <span id="control-of-a-discrete-time-mass-spring-damper-system-with-input-delay" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://drive.google.com/file/d/1_zs_uU1a59uJ8aZk0RwDxtk4zw2WYfK3/view?usp=sharing) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>](https://drive.google.com/file/d/1_zs_uU1a59uJ8aZk0RwDxtk4zw2WYfK3/view?usp=sharing)</span>
+
+The mass-spring-damper system is a classic example in control theory, and it is often used to demonstrate the behavior of different control strategies. In this project, I explored the control of a discrete-time mass-spring-damper system with input delay
+
+<p align="center">
+  <img src="/media/mass_spring_damper.gif" height="200" />
+  <img src="/media/dcs_results.png" height="235" />
+</p>
+
+### Short Summary
+**Goal**: The goal was to design a controller that could stabilize the system and ensure that it behaves as desired, despite the delay in the input signal.
+
+- **Model**: The system is modeled as a discrete-time mass-spring-damper system with the input delayed by $$d$$ time steps.
+<p align="center">
+  <span>  $$ \begin{equation}
+\begin{bmatrix}
+\dot{x}_1 \\
+\dot{x}_2
+\end{bmatrix} =
+\begin{bmatrix}
+0 & 1 \\
+-\frac{k}{m} & -\frac{b}{m}
+\end{bmatrix}
+\begin{bmatrix}
+x_1 \\
+x_2
+\end{bmatrix} +
+\begin{bmatrix}
+0 \\
+\frac{1}{m}
+\end{bmatrix}
+F(t-d)
+\end{equation}
+ $$</span><br>
+</p>
+
+- The **control** strategy involved designing a state feedback controller to stabilize the system and ensure that it behaves as desired, regardless of the input delay. here I have explored Predictor-Preview Controllers, in particular focusing on Switchd-Low-Gain Feedback
+
+<small> Last Update: December, 2020 </small>
+
+<br><br><br>
+
+## Robot learning techniques and MPC for set point regulation of robots with nonlinear flexibility on the joints <span id="robot-learning-techniques-and-mpc-for-set-point-regulation-of-robots-with-nonlinear-flexibility-on-the-joints" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/caciolai/Robot-learning-techniques-for-set-point-regulation-of-robots-with-nonlinear-flexibility-on-the-joint) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>](https://github.com/caciolai/Robot-learning-techniques-for-set-point-regulation-of-robots-with-nonlinear-flexibility-on-the-joint/blob/main/documentation/report.pdf)</span>
+
+Set-point regulation for flexible joints robot is a classic control problem in underactuated robotics. In fact, the noncollocation of the torque inputs and the elastic coupling between the motor and the link makes this kind of system very challenging to control, with respect to the rigid ones.
+
+<p align="center">
+  <img src="/media/flexible_link.png" height="200" /><br/>
+  The Spong model of a flexible link<br/> <br/> <br/> 
+  <img src="/media/mpc.png" height="200" /> <br/>
+  MPC strategy <br/> <br/> <br/> 
+
+  <img src="/media/gpr.png" height="200" /> 
+  <img src="/media/neural_network.png" height="200" /> <br/>
+  Learning techniques tested, conceptual difference between GPR and NN
+</p>
+
+### Short Summary
+**Goal**: The purpose of this project is to study how a data-driven control technique can be applied when the system model is not precisely known, exploiting a robot learning method developed at DIAG, analyzing its applicability and performance in this context. In particular, the latter is used to estimate the nonlinear elastic term of the robot model and combined with a Model Predictive Control (MPC) strategy to regulate the robot's joints to a desired set-point.
+
+- The system is **modeled** as a flexible joint robot with a nonlinear elasticity term, so it can be divided into two subsystems coupled by the nonlinear elastic term.
+<p align="center">
+  <span>  $$ \begin{align*}
+M(q) \ddot{q} + c(q, \dot{q}) + g(q) + \psi(q - \theta) + D \dot{q} &= 0 \\
+B \ddot{\theta} - \psi(q - \theta) + D \dot{\theta} &= \tau
+\end{align*}
+
+$$</span><br>
+</p>
+
+- The **control** strategy involves using a Model Predictive Control (MPC) approach with tail cost formulation. In particular, the tail is chosen as the terminal cost of the constrained linear-quadratic regulator (LQR) computed on the linearized system.
+<p align="center">
+  <span>  $$ V(x, u) = \sum_{i=0}^{N-1} \ell(x(i), u(i)) + \sum_{k=N-1-K}^{N-1} V_f(x(k), u(k))
+ $$</span><br> Getting the control input by minimizing the cost function
+ <span> $$ \begin{align*}
+\text{minimize } & V(x, u) \\
+\text{subject to } & x(k+1) = f(x(k), u(k)) \\
+& h(x, u) \leq 0
+\end{align*}
+$$</span><br>
+</p>
+
+- The **learning technique** used to estimate the nonlinear elasticity term of the system is the Gaussian Process Regression (GPR), which turned out to give better performance than standard machine learning techniques, due to its ability to imporove without overfitting while increasing the number of data points sampled from a fixed size workspace, such as for the case of a manipulator. <br>Once the kernel function $$ k(\cdot, \cdot) $$ is chosen, the mean and the variance of the prediction are given by
+<p align="center">
+  <span>  $$ f(x^*) = k^{T}(K)^{-1}y
+ $$ 
+ $$ V(x^*) = k(x^*, x^*) - k^{T}(K)^{-1}k
+ $$</span><br>
+</p>
+
+<small> Last Update: June, 2021 </small>
+
+
+
+
+<br><br><br><br><br><br>
+## Other Projects
+Here are minor projects, mostly theorethical, that I have been working on during my studies.
+<br><br><br>
+
+## Cooperative attitude synchronization in satellite swarms: a consensus approach <span id="cooperative-attitude-synchronization-in-satellite-swarms-a-consensus-approach" style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>](https://docs.google.com/presentation/d/1RRxgozICgrMBlWLFej99_7suD8wGwpvX/edit?usp=sharing&ouid=117079509386533656063&rtpof=true&sd=true) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>](https://doi.org/10.3182/20070625-5-FR-2916.00039)</span>
+
+<p align="center">
+  <img src="/media/satellite_swarm.gif" height="200" />
+</p>
+
+**Problem**: Autonomous synchronization of attitudes in a swarm of spacecraft
+
+**Solution**: Two types of control laws, in terms of applied control torques, that globally drive the swarm towards attitude synchronization
+- Solution 1: requires tree-like or all-to-all inter-satellite communication (most efficient)
+- Solution 2: works with nearly arbitrary communication (more robust)
+
+<small> Last Update: June, 2021 </small>
+
+<br><br><br>
+
+## A New Method for the Nonlinear Transformation of Means and Covariances in Filters and Estimators <span id="a-new-method-for-the-nonlinear-transformation-of-means-and-covariances-in-filters-and-estimators" style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>](https://drive.google.com/file/d/1t4AP8CL7wIqtvG9lRDwv4nckg7gKg5Ls/view?usp=sharing) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>](10.1109/9.847726)</span>
+
+The goal of this project was to make a report, finding the novelty introduced in the paper. 
+This paper presents a novel method for generalizing the Kalman filter to handle nonlinear systems effectively. Unlike the traditional Extended Kalman Filter (EKF) that relies on linearization, this approach uses a set of deterministically selected samples (sigma points) to parameterize the mean and covariance of a distribution, thus allowing a more accurate and straightforward implementation without the need for Jacobians. The method provides a significant improvement over EKF, particularly in systems with pronounced non-linear characteristics where EKF may introduce substantial biases or errors. The new approach is demonstrated through simulations showing enhanced prediction accuracy and robustness in tracking and estimation tasks.
+
+### Short Summary
+**Goal**: Develop a generalized Kalman filter method for nonlinear systems without relying on linearization.
+
+**Results**: Uses sigma points to capture the true mean and covariance of the state distribution, avoiding the need for linear approximations.
+Demonstrated superior performance to EKF, especially in handling non-linearities.
+Provides a more straightforward implementation approach, as it does not require the computation of Jacobians.
+
+<small>Last Update: June, 2020</small>
+
+<br><br><br>
+
+## DC-motor and 4-tanks system control with <span>  $$  H_\infty $$ and $$ \mu $$-synthesis techniques</span> <span id="dc-motor-and-4-tank-system-control" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://drive.google.com/drive/folders/1SvuPmHNxdLnSUjKJ_k6mfa5pIsZ3yIAx?usp=sharing) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>](https://drive.google.com/drive/folders/1SvuPmHNxdLnSUjKJ_k6mfa5pIsZ3yIAx?usp=sharing)</span>
+
+This is a veeery long series of homework aimed at specializing in the control of MIMO systems with the $$ H_\infty $$ and $$ \mu $$-synthesis techniques. The first part of the project is about the control of a DC-motor, while the second part is about the control of a 4-tanks system. 
+
+<small>Last Update: June, 2021</small>
+
+<br><br><br>
+
+## Implementation of CNN, LSTM and free design of a neural network architecture <span id="implementation-of-cnn-lstm-and-free-design-of-a-neural-network-architecture" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://drive.google.com/drive/folders/1CjRv3hZ0HUbIk4pZWGAoHemNq2NZXw-g?usp=sharing) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>](https://drive.google.com/drive/folders/1CjRv3hZ0HUbIk4pZWGAoHemNq2NZXw-g?usp=sharing)</span>
+
+A series of homeworks aimed at specializing in the implementation of neural networks, in particular Convolutional Neural Networks (CNN) and Long Short-Term Memory (LSTM) networks. The last part of the project is about the free design of a neural network architecture.
+
+<small>Last Update: January, 2020</small>
