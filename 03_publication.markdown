@@ -23,7 +23,7 @@ Not submitted yet (2024)
 
 **Soft Robotic Catheter for Safe Aneurysm Treatment with Enhanced Kinematics and Contact Force Model**<br/>
 *E. Nicotra et al.* <br/>
-IEEE Transactions on Medical Robotics and Bionics (2024)
+IEEE Transactions on Medical Robotics and Bionics (2024) (Under Review)
 
 **A Soft Micro-Robotic Catheter for Aneurysm Treatment: A Novel Design and Enhanced Euler-Bernoulli Model with Cross-Section Optimization**<br/>
 *E. Nicotra et al.* <br/>
@@ -35,6 +35,14 @@ IEEE Conference on Decision and Control (2022).
 
 ## Co-Author Publications
 ___
+**Soft Robotic Artificial Left Ventricle Simulator Capable of Reproducing Myocardial Biomechanics**<br/>
+*J. Davies et al.*<br/>
+Science Robotics (2024)(Under Review)
+
+**Soft Fibrous Syringe Architecture for Electricity-Free and Motorless Control of Flexible Robotic Systems**<br/>
+*C.C. Nguyen et al.*<br/>
+Advanced Science (2024)
+
 **Soft Wearable Haptic Display and Flexible 3D Force Sensor for Teleoperated Surgical Systems**<br/>
 *M.T. Thai et al.*<br/>
 Advanced Sensor Research (2024)

@@ -61,6 +61,13 @@ Here are some of the projects I've been involved in the field of Control, Roboti
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## Vision-Based Robotic Bronchoscope Localization and Cancer Detection <span id="vision-based-robotic-bronchoscope-localization-and-cancer-detection" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>]() </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>]()</span>
+
+<p align="center">
+  <img src="/media/fpv_nav.gif" width="360" />
+  <img src="/media/tpv_nav.gif" width="360" /><br>
+  Simulated example of input camera images and the corresponding output of the realtime robot localization 
+</p>
+<br>
 work in progress...
 
 <br><br><br>

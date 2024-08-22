@@ -18,9 +18,9 @@ layout: page
 
 Ciao! I am a PhD candidate in Surgical Robotics at UNSW, Sydney. 
 
-- Some things I like: Robotics, Control, Model Predictive Control, Computer Vision, Soft Robotics, Reinforcement Learning and their application to surgical robotics.
+Some things I like:<br> • Robotics, Soft Robotics<br>  • Control Theory, Model Predictive Control<br>  • Computer Vision, Reinforcement Learning <br>  • Their application to surgical robotics
 
-- Some things I do: research, coding (mostly to move robots and for developing mobile apps), reading (mostly about engineering and a lot about philosophy), writing, playing football and calisthenics.
+<!-- Some things I do: research, coding (mostly to move robots and for developing mobile apps), reading (mostly about engineering and a lot about philosophy), writing, playing football and calisthenics. -->
 
 
 
@@ -28,9 +28,9 @@ Ciao! I am a PhD candidate in Surgical Robotics at UNSW, Sydney.
 Here I worked as a Robotics Software Engineer at Medlogix to implement autonomous robotics systems in the hyperthermia treatment for fighting cancer with technology. 
 
 I have a Master's degree in Control & Robotics Engineering and a Bachelor's in Mechanical Engineering both from Sapienza University of Rome. -->
-
+<br> 
 ### Currently Working On
-For my PhD, I am trying to automate the surgical procedures using robotic systems. <br/>
+For my PhD, I am trying to automate surgical procedures using robotic systems. <br/>
 For example, a soft robot could be capable of both navigating the bronchial tree and detecting suspicious lesions, only using the information from the camera. <br/>
 
 -  Are the camera images and the exctracted features enough to know precisely where the robot is in the bronchial tree? <br/>
