@@ -1,0 +1,55 @@
+To facilitate your decision process I think a short personal summary could be useful.
+
+I would start with my bachelor's in Mechanical Engineering, which is the last non-intentional decision I took. 
+I started it mostly guided by high school teachers and parents because "it would have secured me a job in the future." 
+If I could go back, I would do something closer to math or physics. 
+The bachelor indeed gave me basic knowledge of fundamental subjects such as math and physics, hence my regret.
+
+My favorite subject was Rational Mechanics, which introduced me to dynamical systems and Lyapunov's theory of stability. 
+For this reason, I decided to pursue a master's in Control & Robotics Engineering. 
+Here, I had better academic results, probably driven by a higher interest in the subject (6th highest in the ranking as of 5 Feb 21).
+Every year at uni I won an award based on academic results (GPA and ECTS):
+- Borsecoll 2019, 20, 21
+- Exam Bonus 2018 (rank 17/260),
+- School-leaving examination 2017 (diploma grade ≥ 95/100).
+My master's thesis is still my biggest work and the one I worked on with more passion and interest. It was about MPC control of soft robots. 
+The thesis ended with the publication of a new MATLAB toolbox, which has been downloaded ~75 times more than I expected (the 2 downloads from my friends)!
+
+In 2022 I worked as an external consultant for Fincantieri s.p.a., helping develop a self-balancing radar for a military ship. 
+After some months, I also started working full-time for Medlogix s.r.l., implementing autonomous robotics systems in hyperthermia treatment.
+
+Driven by a higher interest for research in robotics, in 2023 I started a PhD at UNSW. 
+The idea was to apply part of the results of my master's thesis to automate surgical tasks, 
+in addition to using computer vision and machine learning to localize the robot, detect objects and learn to navigate inside the human body.
+
+However, I don't think that robotics and control are the central topics in the lab I am working in; 
+therefore, I am looking for something closer to my interests, and the Robotic Systems Lab lab looks exactly like it.
+Clearly, in addition to being one of the best labs in the world regarding robotics.
+
+Recently, I developed a strong passion for making mobile apps. 
+Most of them are "meme apps" just for fun, but for bureaucratic reasons, I had to gather them under a company, together with a friend of mine.
+
+Finally, I really like learning new things.
+One of my favourite topics is life in general: What is life? Why do we live? Why do we do what we do? I find these questions extremely interesting. 
+Putting it in robotics and control terms, I want to find what is at the top of the hierarchy of the objective functions that we try to optimise for. 
+It looks like entropy plays a role here, and some think that living beings are the part of the universe capable of reversing the second law of thermodynamics. 
+I think that if we design robots such that they try to optimise for the same goals as us, in the long run, it would be very hard to make a distinction between a robot and a living being. 
+I am also trying to organise all this information in a book I am writing, with the goal of understanding why we do what we do, so yeah, not only trying to understand the reason why I am applying for this position, but also the reason why you want a new PhD student.
+
+To conclude, here is a list of projects I have worked on about robotics, control and machine learning, with the final grade, related publications or company in brackets.
+The full list with more detailed descriptions and code can be found on my personal website (https://emanuele-n.github.io/robotics)
+- Vision-Based Robotic Bronchoscope Localization and Cancer Detection (current project)
+- Contact Force Model for Soft Robots (ICRA24)
+- Panda for Hyperthermia (Medlogix srl)
+- Self-balancing radar (Fincantieri spa)
+- MPC for Soft Robots (Master's thesis 110/110)
+- Motion Planning with RRT + CBF (Autonomous Mobile Robots 30/30)
+- Aircraft Landing Control (Vehicle Systems Dynamics 30/30)
+- Trajectory Tracking of a KUKA LBR 7R (Robotics 29/30)
+- Optimal Control of Covid-19 Pandemic (Optimal Control 29/30)
+- Control of a discrete time Mass-Spring-Damper system with input delay (digital Control Systems 30/30)
+- Robot learning techniques and MPC for set point regulation of robots with nonlinear flexibility on the joints (Underactuated Robots 30/30)
+- Implementation of CNN, LSTM and free design of a neural network architecture (Machine Learning 28/30)
+- A New Method for the Nonlinear Transformation of Means and Covariances in Filters and Estimators (System Identification 29/30)
+- DC-motor and 4-tanks system control with H∞ and μ-synthesis techniques (Multivariable Feedback Control 29/30)
+- Cooperative attitude synchronization in satellite swarms: a consensus approach (Multi-robots Systems 30/30)
