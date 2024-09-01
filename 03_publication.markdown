@@ -37,7 +37,7 @@ IEEE Conference on Decision and Control (2022).
 ___
 **Soft Robotic Artificial Left Ventricle Simulator Capable of Reproducing Myocardial Biomechanics**<br/>
 *J. Davies et al.*<br/>
-Science Robotics (2024)(Under Review)
+Science Robotics (2024)
 
 **Soft Fibrous Syringe Architecture for Electricity-Free and Motorless Control of Flexible Robotic Systems**<br/>
 *C.C. Nguyen et al.*<br/>
