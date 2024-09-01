@@ -23,7 +23,7 @@ Not submitted yet (2024)
 
 **Soft Robotic Catheter for Safe Aneurysm Treatment with Enhanced Kinematics and Contact Force Model**<br/>
 *E. Nicotra et al.* <br/>
-IEEE Transactions on Medical Robotics and Bionics (2024) (Under Review)
+IEEE Transactions on Medical Robotics and Bionics (2024) 
 
 **A Soft Micro-Robotic Catheter for Aneurysm Treatment: A Novel Design and Enhanced Euler-Bernoulli Model with Cross-Section Optimization**<br/>
 *E. Nicotra et al.* <br/>
