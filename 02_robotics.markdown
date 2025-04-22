@@ -14,7 +14,7 @@ permalink: /robotics/
 </script>
 
 ## Panda for Hyperthermia
-While working at [Medlogix](https://www.albahyperthermia.com/) I was lucky enough to have the possibility of writing code for the Panda robot from Franka Emika. Here I experimented with many different control techniques such as FBL, impedance and admittance control, to find the best solution for curing cancer with hyperthermia!. [Here](https://github.com/Emanuele-n/panda-win) is a distillated version of the software to run everything on Windows (I know, I know...) while displaying the robot movements on CoppeliaSim. 
+While working at [Medlogix](https://www.albahyperthermia.com/) I was lucky enough to have the possibility of writing code for the Panda robot from Franka Emika. Here I experimented with many different control techniques such as FBL, impedance and admittance control, to find the best solution for curing cancer with hyperthermia!. [Here](https://github.com/em-ni/panda-win) is a distillated version of the software to run everything on Windows (I know, I know...) while displaying the robot movements on CoppeliaSim. 
 One day I asked chatGPT to write the parametric Cartesian equations of an heart and I made the robot follow the trajectory, basically I am just a bridge between two robots. Here is the Panda spreading some love
 <p align="center">
 	<img src="/media/love_trajectory.gif"/>
@@ -40,7 +40,7 @@ Top-left is fully actuated; top-right is underactuated on the last CC segment; b
 
 
 ## Motion Planning with RRT + CBF 
-[Here](https://github.com/Emanuele-n/Enhancing-kinodynamic-RRT-using-CBF-based-steering) is a project about Probabilistic Motion Planning of Unicyle Mobile Robot using Rapidly-exploring Random Tree (RRT) with Control Barrier Functions (CBF)
+[Here](https://github.com/em-ni/Enhancing-kinodynamic-RRT-using-CBF-based-steering) is a project about Probabilistic Motion Planning of Unicyle Mobile Robot using Rapidly-exploring Random Tree (RRT) with Control Barrier Functions (CBF)
 
 Here are some examples of the application of the algorithm in four scenes with increasing difficulty
 <p align="center">
