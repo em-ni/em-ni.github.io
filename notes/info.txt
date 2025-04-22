@@ -4,3 +4,6 @@
 3. bundle config set --local path 'vendor/bundle'
 4. bundle install
 5. bundle exec jekyll serve
+
+# Icons
+https://aksakalli.github.io/jekyll-doc-theme/docs/font-awesome/
