@@ -72,7 +72,7 @@ work in progress...
 
 <br><br><br>
 
-## Contact Force Model for Soft Robots <span id="contact-force-model-for-soft-robots" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/Emanuele-n/sim) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>]()</span>
+## Contact Force Model for Soft Robots <span id="contact-force-model-for-soft-robots" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/em-ni/sim) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>]()</span>
 Soft Robots find the best application to robotic surgery, where the compliance of the structure is a key feature to ensure the safety of the patient. However, the compliance of the robot makes the control more challenging, especially when the robot is in contact with the environment and it doesn't have force sensors. <br/>
 Here I developed a contact force model for a soft continuum robot, which is able to predict the contact force and the deformation of the robot when in contact with an obstacle. <br/>
 <p align="center">
@@ -107,7 +107,7 @@ Here I developed a contact force model for a soft continuum robot, which is able
 
 <br><br><br>
 
-## Panda for Hyperthermia <span id="panda-for-hyperthermia" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/Emanuele-n/panda-win)</span>
+## Panda for Hyperthermia <span id="panda-for-hyperthermia" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/em-ni/panda-win)</span>
 While working at [Medlogix](https://www.albahyperthermia.com/) I had the possibility of writing the code for controlling the [Panda](https://robodk.com/robot/Franka/Emika-Panda) robot from Franka Emika. Here I experimented with many different control techniques such as FBL, impedance and admittance control, to find the best solution for curing cancer with hyperthermia! <br/>
 One day I asked chatGPT to write the parametric Cartesian equations of an heart and I made the robot follow the trajectory, basically I am just a bridge between two robots. 
 <p align="center">
@@ -196,7 +196,7 @@ Here are some examples of trajectory tracking and set-point regulation of a 3-DO
 
 <br><br><br>
 
-## Motion Planning with RRT + CBF <span id="motion-planning-with-rrt--cbf" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/Emanuele-n/Enhancing-kinodynamic-RRT-using-CBF-based-steering) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>](https://github.com/Emanuele-n/Enhancing-kinodynamic-RRT-using-CBF-based-steering/blob/main/AMR_report.pdf)</span>
+## Motion Planning with RRT + CBF <span id="motion-planning-with-rrt--cbf" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/em-ni/Enhancing-kinodynamic-RRT-using-CBF-based-steering) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>](https://github.com/em-ni/Enhancing-kinodynamic-RRT-using-CBF-based-steering/blob/main/AMR_report.pdf)</span>
 Here is a project about Probabilistic Motion Planning of Unicyle Mobile Robot using Rapidly-exploring Random Tree (RRT) with Control Barrier Functions (CBF)
 
 Here are some examples of the application of the algorithm in four scenes with increasing difficulty
@@ -234,7 +234,7 @@ Here are some examples of the application of the algorithm in four scenes with i
 
 <br><br><br>
 
-## Aircraft Landing Control <span id="aircraft-landing-control" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/Emanuele-n/Aircraft-Landing-Gear-Simulation-and-Control) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>](https://github.com/Emanuele-n/Aircraft-Landing-Gear-Simulation-and-Control/blob/main/Vehicle_Systems_Dynamics.pdf)</span>
+## Aircraft Landing Control <span id="aircraft-landing-control" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/em-ni/Aircraft-Landing-Gear-Simulation-and-Control) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>](https://github.com/em-ni/Aircraft-Landing-Gear-Simulation-and-Control/blob/main/Vehicle_Systems_Dynamics.pdf)</span>
 <p align="center">
 	<img src="/media/landing.png" width="550" />
 </p>
@@ -263,7 +263,7 @@ The second one aim to regulate the horizontal velocity $$ \dot{x} $$ and the ang
 
 <br><br><br>
 
-## Trajectory Tracking of a KUKA LBR 7R <span id="trajectory-tracking-of-a-kuka-lbr-7r" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/Emanuele-n/Robot-Learning-Control)</span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>](https://github.com/Emanuele-n/Robot-Learning-Control/blob/main/Robotics_II.pdf) </span>
+## Trajectory Tracking of a KUKA LBR 7R <span id="trajectory-tracking-of-a-kuka-lbr-7r" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/em-ni/Robot-Learning-Control)</span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>](https://github.com/em-ni/Robot-Learning-Control/blob/main/Robotics_II.pdf) </span>
 <p align="center">
 	<img src="/media/kuka.png" height="150" />
 	<img src="/media/gpr_q1.png" height="200" />
