@@ -17,17 +17,21 @@ permalink: /publications/
 
 ## First Author Publications
 ___
-**Vision-Based Robotic Bronchoscope Localization and Cancer Detection**<br/>
+**Vision-Language Model Predictive Control for Neural Network Dynamics: Input-to-State Stability and Real-Time Performance**<br/>
 *E. Nicotra et al.*<br/>
-Not submitted yet (2024)
+IEEE International Conference on Robotics and Automation (ICRA 2026) (Submitted)
+
+**BronchoSim: An Open-Source Bronchoscopy Simulator and a Novel Surgical Workflow combining Temporally Coherent Monocular Depth Estimation, SLAM and Anatomical Priors from CT scans**<br/>
+*E. Nicotra et al.*<br/>
+IEEE Transactions on Robotics (T-RO 2025) (Submitted)
 
 **Soft Robotic Catheter for Safe Aneurysm Treatment with Enhanced Kinematics and Contact Force Model**<br/>
 *E. Nicotra et al.* <br/>
-IEEE Transactions on Medical Robotics and Bionics (2024) 
+IEEE Transactions on Medical Robotics and Bionics (T-MRB 2024) (Under Review)
 
 **A Soft Micro-Robotic Catheter for Aneurysm Treatment: A Novel Design and Enhanced Euler-Bernoulli Model with Cross-Section Optimization**<br/>
 *E. Nicotra et al.* <br/>
-IEEE International Conference on Robotics and Automation (ICRA) (2024)
+IEEE International Conference on Robotics and Automation (ICRA 2024)
 
 **Model Predictive Control for the Execution of Tasks in Soft Robots**<br/>
 *E. Nicotra et al.* <br/>
@@ -53,11 +57,11 @@ Advanced Intelligent Systems (2024)
 
 **Hydraulically Actuated Soft Tubular Gripper**  <br/>
 *J. Davies et al.*    <br/>
-IEEE International Conference on Robotics and Automation (ICRA) (2022)
+IEEE International Conference on Robotics and Automation (ICRA 2022)
 
 **Bidirectional Soft Robotic Catheter for Arrhythmia Treatment**  <br/>
 *C.C. Nguyen et al.* <br/>
-IEEE International Conference on Robotics and Automation (ICRA) (2022)
+IEEE International Conference on Robotics and Automation (ICRA 2022)
 
 
 

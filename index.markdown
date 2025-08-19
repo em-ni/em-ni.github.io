@@ -14,30 +14,30 @@ layout: page
   gtag('config', 'G-PQFC01D0LX');
 </script>
 
-![](/media/pp.png){: style="float: left; margin-right: 20px;" width="180px"} 
+![](/media/pp.png){: style="float: left; margin-right: 30px;" width="200px"} 
 
 Ciao! I am a PhD candidate in Surgical Robotics at UNSW, Sydney. 
 
-Some things I like:<br> • Robotics, Soft Robotics<br>  • Control Theory, Model Predictive Control<br>  • Computer Vision, Reinforcement Learning <br>  • Their application to surgical robotics
+I am interested in the intersection of robotics, control theory, and artificial intelligence
 
-<!-- Some things I do: research, coding (mostly to move robots and for developing mobile apps), reading (mostly about engineering and a lot about philosophy), writing, playing football and calisthenics. -->
+<br>
+<br>
+<br>
+<br>
+<br>
+
+## Timeline
+
+| Aug 2024 | Director at B0NE pty ltd
+| Feb 2023 | Started PhD in Surgical Robotics at UNSW, Sydney |
+| Apr 2022 | Trying to cure cancer with robots and hyperthermia treatment at Medlogix srl
+| Jan 2022 | Development of a self-balancing radar for a military ship at Fincantieri spa
+| Dec 2021 | Completed MS in Control and Robotics Engineering  |
+| Nov 2019 | Completed BS in Mechanical Engineering |
 
 
 
-<!-- Before reaching Australia I was living in Rome, Italy, the city where I was born. 
-Here I worked as a Robotics Software Engineer at Medlogix to implement autonomous robotics systems in the hyperthermia treatment for fighting cancer with technology. 
-
-I have a Master's degree in Control & Robotics Engineering and a Bachelor's in Mechanical Engineering both from Sapienza University of Rome. -->
+[Here](/robotics) are some of the projects I’ve been involved in the field of Control, Robotics and AI.<br>
+[Here](/projects) are some additional projects I did during my free time.<br>
+[Here](/publications) are some of my publications.<br>
 <br> 
-### Currently Working On
-For my PhD, I am trying to automate surgical procedures using robotic systems. <br/>
-For example, a soft robot could be capable of both navigating the bronchial tree and detecting suspicious lesions, only using the information from the camera. <br/>
-
--  Are the camera images and the exctracted features enough to know precisely where the robot is in the bronchial tree? <br/>
-**Keywords**: SLAM, Visual Odometry, etc.<br/>
-
-- Can we get close to 100% accuracy in detecting cancerous lesions using only computer vision techniques? <br/>
-**Keywords**: Computer Vision, Deep Learning, etc.
-
-- How to precisely control the robot to reach the desired location? <br/>
-**Keywords**: Model Predictive Control, Reinforcement Learning, etc.

@@ -37,7 +37,8 @@ Here are some of the projects I've been involved in the field of Control, Roboti
 
 ## Robotics & Control Projects
 - PhD Related
-  - [Vision-Based Robotic Bronchoscope Localization and Cancer Detection](#vision-based-robotic-bronchoscope-localization-and-cancer-detection)
+  - [Vision-Language Model Predictive Control for Neural Network Dynamics: Input-to-State Stability and Real-Time Performance](#vlmpc-for-neural-network-dynamics-input-to-state-stability-and-real-time-performance)
+  - [BronchoSim: An Open-Source Bronchoscopy Simulator and a Novel Surgical Workflow](#vision-based-robotic-bronchoscope-localization-and-cancer-detection)
   - [Contact Force Model for Soft Robots](#contact-force-model-for-soft-robots)
 - Work Related
   - [Panda for Hyperthermia](#panda-for-hyperthermia)
@@ -60,19 +61,104 @@ Here are some of the projects I've been involved in the field of Control, Roboti
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-## Vision-Based Robotic Bronchoscope Localization and Cancer Detection <span id="vision-based-robotic-bronchoscope-localization-and-cancer-detection" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>]() </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>]()</span>
 
+
+## Vision-Language Model Predictive Control for Neural Network Dynamics: Input-to-State Stability and Real-Time Performance <span id="vlmpc-for-neural-network-dynamics-input-to-state-stability-and-real-time-performance" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/em-ni/sorolearn/tree/main/sim) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>]()</span>
 <p align="center">
-  <img src="/media/fpv_nav.gif" width="360" />
-  <img src="/media/tpv_nav.gif" width="360" /><br>
-  Simulated example of input camera images and the corresponding output of the realtime robot localization 
+  <img src="/media/red_yellow_blue.gif" width="360" /><br>
+  Person: Touch the red, yellow and blue targets in this order
+  <img src="/media/obs_avoid_int.gif" width="360" /><br>
+  Person: Touch the blue first, then the yellow, making sure you avoid the obstacles
+  
+  
 </p>
 <br>
-work in progress...
+
+### Short Summary
+**Goal**: building a safe general control method for any type of robot, interacting with it in natural language.
+
+**Vision-Language-Action** models are the current SOTA, yet they lack stability guarantees especially for systems entirely modeled with neural networks. 
+
+- First I used a neural network (with uniformly continous activation functions) to **learn the dynamics** of a general dynamical system (a soft robot in this case)
+<p align="center">
+  <span>$$ x_{k+1} = f(x_k , u_k ) \approx f_{NN}(x_k , u_k ) $$</span>
+</p>
+- Then I combined **VLM and Model Predictive Control**, such that the first can predict the parameters of the latter (e.g. reference trajectory, cost function, terminal ingredients), given the user input in natural language and the view of the robot in the workspace
+- The MPC needs to call the state function (NN inference) many times for each step, so to speed up the process I approximated it with its Taylor's expansion, e.g. the **second order approximation** is
+<p align="center">
+  <span>$$ f_{NN}(x, u) = f_{NN}(x_i, u_i) + J_{NN}[x - x_i; u - u_i] + \dfrac{1}{2}[x - x_i; u - u_i] H_{NN}[x - x_i; u - u_i]  + o(||x - x_i; u - u_i||^3) $$</span>
+</p>  
+What's the error introduced by the approximation?<br> Since it has to be inside the MPC it's informative to check the **N-steps Rollout error**
+<p align="center">
+  <img src="/media/rollout-error.png" width="450" /><br>
+  <span>$$ e_N = \norm{\hat{x}_{k+N}-x_{k+N}} $$</span><br>
+  <img src="/media/n-steps-rollout.png" width="600" /><br>
+</p>  
+So if we assume the prediction error of the full NN wrt the real dynamics is **bounded** by a constant $$ \mu $$, then the approximation error is bounded as
+<p align="center">
+  <span>$$ |y - \hat{y}| \leq \mu + o(||x - x_i; u - u_i||^3) \leq \mu + \epsilon $$</span>
+</p>  
+
+- Finally to guarantee the input to state stability of the system I constrained the VLM output such that the a set of **sufficient conditions** are always respected
+
+The choice of the cost function as
+<p align="center">
+  <span>$$ J = \sum_{k=0}^{N-1} l(x_k, u_k) + \lambda V_f(x_N - x_{ref}) $$</span>
+  with
+  <span>$$ l(x, u) = (x - x_{ref})^T Q (x - x_{ref}) + (u - u_{ref})^T R (u - u_{ref}) $$</span>
+  <span>$$ V_f(x - x_{ref}) = (x - x_{ref})^T P (x - x_{ref}) $$</span>
+  <span>$$ k_f(x - x_{ref}) = K^T (x - x_{ref})  + u_{ref} $$</span>
+  where K and P come from the solution of the discrete algebraic Riccati equation and Q and R are positive definite matrices
+</p>  
+in addition to the choice of a uniformly continous NN with bounded prediction error, define a **region of attraction** around the reference whose the size can be regulated by tuning lambda, such that every possible reference predicted by the VLM can be picked inside it
+
 
 <br><br><br>
 
-## Contact Force Model for Soft Robots <span id="contact-force-model-for-soft-robots" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/em-ni/sim) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>]()</span>
+## BronchoSim: An Open-Source Bronchoscopy Simulator and a Novel Surgical Workflow <span id="vision-based-robotic-bronchoscope-localization-and-cancer-detection" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/em-ni/phd/tree/main/slam/navigation) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>]()</span>
+
+<p align="center">
+  <!-- <img src="/media/fpv_nav.gif" width="360" /> -->
+  <img src="/media/bronchosim-demo.gif" width="600" /><br><br><br>
+  <img src="/media/mde-slam.png" width="700" /><br>
+  <!-- <img src="/media/bronchosim.png" width="360" /><br> -->
+  
+  Example of bronchoscope tracking using the combination of Monocular Depth Estimation (MDE), RGB-D SLAM and CT scans priors within BronchoSim, the newly developed open source simulator
+</p>
+<br>
+
+### Short Summary
+**Goal**: the ultimate goal is to have a fully **autonomous robotic bronchoscope**. <br>
+To achieve it, a sub-goal is to have a reliable tracking algorithm for the robot, independent of external devices, to be localized inside the lungs. 
+
+**Problems**: there are two main problems:
+- the lack of a framework for **synthetic dataset** creation and **algorithms benchmarking**, suited for robotic bronchoscopy navigation and tracking. 
+- the actual development of working algorithms suited for **robotic bronchoscopy tracking** based only on camera inputs.
+
+**Solution**: development of a new open source framework for robotic bronchoscopy navigation and a new SLAM method combining MDE and CT scans priors with the camera RGB images
+<p align="center">
+<img src="/media/bronchosim.png" width="600" /><br>
+</p>
+Overview of BronchoSim
+
+A) **System Architecture**: the input
+layer is composed of the patient’s anatomical data, user inputs,
+software args and sensors; these are fed to the main, which based on
+the modality selected by the user, starts the respective pipeline for
+dataset generation or live tracking; the output layer can include the
+generated synthetic dataset or the live trajectory of the bronchoscope
+during the procedure 
+
+B) Visualization of **BronchoSim outputs**:
+on the left the synthetic dataset generation exploring different
+branches of the lungs; on the right a conceptual illustration of the
+proposed bronchoscopy navigation system in a clinical setting. The
+system provides real-time visual feedback, displaying the localized
+bronchoscope within the patient’s 3D airway model on a monitor,
+assisting the physician during the procedure
+<br><br><br>
+
+## Contact Force Model for Soft Robots <span id="contact-force-model-for-soft-robots" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/em-ni/phd/tree/main/sim) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>]()</span>
 Soft Robots find the best application to robotic surgery, where the compliance of the structure is a key feature to ensure the safety of the patient. However, the compliance of the robot makes the control more challenging, especially when the robot is in contact with the environment and it doesn't have force sensors. <br/>
 Here I developed a contact force model for a soft continuum robot, which is able to predict the contact force and the deformation of the robot when in contact with an obstacle. <br/>
 <p align="center">
@@ -240,7 +326,7 @@ Here are some examples of the application of the algorithm in four scenes with i
 </p>
 
 ### Short Summary
-**GOAL**: Design a control system for the landing gear of an aircraft to ensure a safe and autonomous landing. 
+**Goal**: Design a control system for the landing gear of an aircraft to ensure a safe and autonomous landing. 
 - The aircraft is **modeled** as a 7-DOF system with state variable $$x = [ z, z_{wf}, z_{wr}, \theta, x, \omega_{f}, \omega_{r} ]$$. The controlled elements are the elevators, the flaps and the active suspension of the front landing gear, together with the breaks of the rear and front gear, yelding to the control input $$ u = [ L, u_{\theta}, F_{aereo}, C_r, C_f ]$$. 
 <p align="center">
 	<img src="/media/aircraft_variables.png" width="300" />
@@ -270,7 +356,7 @@ The second one aim to regulate the horizontal velocity $$ \dot{x} $$ and the ang
 </p>
 
 ### Short Summary
-**GOAL**: When performing a Feedback Linearization (FL) there are always mismatches between the model and the real system, the goal of this porject is to use the Gaussian Process Regression (GPR) to learn the mismatch and to improve the tracking performance of the robot. <br/>
+**Goal**: When performing a Feedback Linearization (FL) there are always mismatches between the model and the real system, the goal of this porject is to use the Gaussian Process Regression (GPR) to learn the mismatch and to improve the tracking performance of the robot. <br/>
 - Robot dynamic **model** 
 <p align="center">
   <span>  $$ M(q)\ddot{q} + C(q, \dot{q})\dot{q} + G(q) = u $$</span><br>
@@ -312,7 +398,7 @@ The second one aim to regulate the horizontal velocity $$ \dot{x} $$ and the ang
 </p>
 
 ### Short Summary
-**GOAL**: Design an optimal control strategy to minimize the number of infected and loss people due to the lockdown. <br/>
+**Goal**: Design an optimal control strategy to minimize the number of infected and loss people due to the lockdown. <br/>
 - The **model** is a SEIR model $$ x = [S,E,I,R] $$ with the addition of the lockdown control $$ u(t) $$ and health care capacity $$ v(t) $$
 
 <p align="center">

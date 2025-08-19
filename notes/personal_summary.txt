@@ -38,7 +38,7 @@ I am also trying to organise all this information in a book I am writing, with t
 
 To conclude, here is a list of projects I have worked on about robotics, control and machine learning, with the final grade, related publications or company in brackets.
 The full list with more detailed descriptions and code can be found on my personal website (https://em-ni.github.io/robotics)
-- Vision-Based Robotic Bronchoscope Localization and Cancer Detection (current project)
+- BronchoSim: An Open-Source Bronchoscopy Simulator and a Novel Surgical Workflow (current project)
 - Contact Force Model for Soft Robots (ICRA24)
 - Panda for Hyperthermia (Medlogix srl)
 - Self-balancing radar (Fincantieri spa)
