@@ -15,6 +15,23 @@ permalink: /projects/
 
 Here are some additional projects I did during my free time. 
 
+## OnlyFarts
+The PhD about robotic surgery is too serious so I have to compensate with some humor.
+Apparently, people like farts so if you are one of them, you can [download](https://play.google.com/store/apps/details?id=com.onlyfarts.onlyfarts&pcampaignid=web_share) the app!
+<div style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <img src="/media/of/Picture 1.png" style="max-width: 20%; margin: 5px;"/>
+    <img src="/media/of/Picture 2.png" style="max-width: 20%; margin: 5px;"/>
+    <img src="/media/of/Picture 3.png" style="max-width: 20%; margin: 5px;"/>
+    <img src="/media/of/Picture 4.png" style="max-width: 20%; margin: 5px;"/>
+
+    <img src="/media/of/Picture 5.png" style="max-width: 20%; margin: 5px;"/>
+    <img src="/media/of/Picture 6.png" style="max-width: 20%; margin: 5px;"/>
+    <img src="/media/of/Picture 7.png" style="max-width: 20%; margin: 5px;"/>
+    <img src="/media/of/Picture 8.png" style="max-width: 20%; margin: 5px;"/>
+
+</div>
+<br/><br/><br/>
+
 ## Guzzi Dingo
 With one of my best friends we bought an old and broken Guzzi Dingo and we restored it. It was a lot of fun and we learned a lot about hands-on mechanics. 
 

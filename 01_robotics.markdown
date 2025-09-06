@@ -37,7 +37,7 @@ Here are some of the projects I've been involved in the field of Control, Roboti
 
 ## Robotics & Control Projects
 - PhD Related
-  - [Vision-Language Model Predictive Control for Neural Network Dynamics: Input-to-State Stability and Real-Time Performance](#vlmpc-for-neural-network-dynamics-input-to-state-stability-and-real-time-performance)
+  - [Prompt-to-State Stable Vision-Language MPC for Approximated Neural Network Dynamics](#vlmpc-for-neural-network-dynamics-input-to-state-stability-and-real-time-performance)
   - [BronchoSim: An Open-Source Bronchoscopy Simulator and a Novel Surgical Workflow](#vision-based-robotic-bronchoscope-localization-and-cancer-detection)
   - [Contact Force Model for Soft Robots](#contact-force-model-for-soft-robots)
 - Work Related
@@ -63,7 +63,7 @@ Here are some of the projects I've been involved in the field of Control, Roboti
 
 
 
-## Vision-Language Model Predictive Control for Neural Network Dynamics: Input-to-State Stability and Real-Time Performance <span id="vlmpc-for-neural-network-dynamics-input-to-state-stability-and-real-time-performance" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/em-ni/sorolearn/tree/main/sim) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>]()</span>
+## Prompt-to-State Stable Vision-Language MPC for Approximated Neural Network Dynamics <span id="vlmpc-for-neural-network-dynamics-input-to-state-stability-and-real-time-performance" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/em-ni/sorolearn/tree/main/sim) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>]()</span>
 <p align="center">
   <img src="/media/red_yellow_blue.gif" width="360" /><br>
   Person: Touch the red, yellow and blue targets in this order

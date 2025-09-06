@@ -16,7 +16,7 @@ layout: page
 
 ![](/media/pp.png){: style="float: left; margin-right: 30px;" width="200px"} 
 
-Ciao! I am a PhD candidate in Surgical Robotics at UNSW, Sydney. 
+Ciao! I am a PhD candidate at UNSW, Sydney. 
 
 I am interested in the intersection of robotics, control theory, and artificial intelligence
 
@@ -29,9 +29,9 @@ I am interested in the intersection of robotics, control theory, and artificial 
 ## Timeline
 
 | Aug 2024 | Director at B0NE pty ltd
-| Feb 2023 | Started PhD in Surgical Robotics at UNSW, Sydney |
-| Apr 2022 | Trying to cure cancer with robots and hyperthermia treatment at Medlogix srl
-| Jan 2022 | Development of a self-balancing radar for a military ship at Fincantieri spa
+| Feb 2023 | Started PhD at at UNSW, Sydney |
+| Apr 2022 | Using robots to fight cancer with hyperthermia treatment at Medlogix srl
+| Jan 2022 | Helped developing a self-balancing radar for a military ship at Fincantieri spa
 | Dec 2021 | Completed MS in Control and Robotics Engineering  |
 | Nov 2019 | Completed BS in Mechanical Engineering |
 

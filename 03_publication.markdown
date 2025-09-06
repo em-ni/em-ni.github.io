@@ -17,7 +17,7 @@ permalink: /publications/
 
 ## First Author Publications
 ___
-**Vision-Language Model Predictive Control for Neural Network Dynamics: Input-to-State Stability and Real-Time Performance**<br/>
+**Prompt-to-State Stable Vision-Language MPC for Approximated Neural Network Dynamics**<br/>
 *E. Nicotra et al.*<br/>
 IEEE International Conference on Robotics and Automation (ICRA 2026) (Submitted)
 
@@ -29,7 +29,7 @@ IEEE Transactions on Robotics (T-RO 2025) (Submitted)
 *E. Nicotra et al.* <br/>
 IEEE Transactions on Medical Robotics and Bionics (T-MRB 2024) (Under Review)
 
-**A Soft Micro-Robotic Catheter for Aneurysm Treatment: A Novel Design and Enhanced Euler-Bernoulli Model with Cross-Section Optimization**<br/>
+**A Micro-Robotic Catheter for Aneurysm Treatment: A Novel Design and Enhanced Euler-Bernoulli Model with Cross-Section Optimization**<br/>
 *E. Nicotra et al.* <br/>
 IEEE International Conference on Robotics and Automation (ICRA 2024)
 
