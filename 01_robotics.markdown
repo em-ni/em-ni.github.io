@@ -38,7 +38,7 @@ Here are some of the projects I've been involved in the field of Control, Roboti
 ## Robotics & Control Projects
 - PhD Related
   - [Prompt-to-State Stable Vision-Language MPC for Approximated Neural Network Dynamics](#vlmpc-for-neural-network-dynamics-input-to-state-stability-and-real-time-performance)
-  - [BronchoSim: An Open-Source Bronchoscopy Simulator and a Novel Surgical Workflow](#vision-based-robotic-bronchoscope-localization-and-cancer-detection)
+  - [End-to-end Learning-based Bronchoscope Tracking Enhanced with Medical CT Imaging and a Novel Open-Source Simulator](#broncho-loc)
   - [Contact Force Model for Soft Robots](#contact-force-model-for-soft-robots)
 - Work Related
   - [Panda for Hyperthermia](#panda-for-hyperthermia)
@@ -115,15 +115,16 @@ in addition to the choice of a uniformly continous NN with bounded prediction er
 
 <br><br><br>
 
-## BronchoSim: An Open-Source Bronchoscopy Simulator and a Novel Surgical Workflow <span id="vision-based-robotic-bronchoscope-localization-and-cancer-detection" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/em-ni/phd/tree/main/slam/navigation) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>]()</span>
+## End-to-end Learning-based Bronchoscope Tracking Enhanced with Medical CT Imaging and a Novel Open-Source Simulator <span id="broncho-loc" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/em-ni/phd/tree/main/slam/navigation) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>]()</span>
 
 <p align="center">
-  <!-- <img src="/media/fpv_nav.gif" width="360" /> -->
-  <img src="/media/bronchosim-demo.gif" width="600" /><br><br><br>
-  <img src="/media/mde-slam.png" width="700" /><br>
-  <!-- <img src="/media/bronchosim.png" width="360" /><br> -->
-  
-  Example of bronchoscope tracking using the combination of Monocular Depth Estimation (MDE), RGB-D SLAM and CT scans priors within BronchoSim, the newly developed open source simulator
+  <img src="/media/bronchosim-demo.gif" width="600" /><br>
+  Real-time bronchoscope localization
+</p>
+<br/>
+<p align="center">
+  <img src="/media/broncholoc.png" width="1000" /><br>
+  AI architecture
 </p>
 <br>
 
@@ -131,31 +132,57 @@ in addition to the choice of a uniformly continous NN with bounded prediction er
 **Goal**: the ultimate goal is to have a fully **autonomous robotic bronchoscope**. <br>
 To achieve it, a sub-goal is to have a reliable tracking algorithm for the robot, independent of external devices, to be localized inside the lungs. 
 
-**Problems**: there are two main problems:
-- the lack of a framework for **synthetic dataset** creation and **algorithms benchmarking**, suited for robotic bronchoscopy navigation and tracking. 
-- the actual development of working algorithms suited for **robotic bronchoscopy tracking** based only on camera inputs.
+**Problems**: 
+- Existing sensor-based methods (EM trackers, FBG sensors) are **expensive** and require dedicated hardware not compatible with standard bronchoscopes
+- Vision-based methods (visual SLAM, depth estimation) suffer from **cumulative drift**, scale ambiguity, and the **textureless** repetitive appearance of airway walls
+- No existing architecture directly predicts the 6-DoF pose while **constraining predictions to the anatomical manifold**
+- Lack of open-source tools for **synthetic dataset creation** and **algorithm benchmarking** in robotic bronchoscopy
 
-**Solution**: development of a new open source framework for robotic bronchoscopy navigation and a new SLAM method combining MDE and CT scans priors with the camera RGB images
+**Solution**: An end-to-end learning-based localization framework that synergizes local visual perception with global anatomical reasoning, constrained by design to the patient-specific airway anatomy derived from preoperative CT imaging. Together with **BronchoSim**, an open-source bronchoscopy simulator for synthetic data generation and real-time visualization.
+
+#### Integration of CT Imaging Priors
+<p align="center">
+<img src="/media/ct_to_centerlines.png" width="400" /><br>
+</p>
+
+Preoperative CT scans are processed through a multi-stage pipeline: airway segmentation via Frangi vesselness filtering, 3D mesh generation with marching cubes, topological repair to genus-0, centerline extraction using VMTK, and discretization into a dense point cloud manifold with Rotation Minimizing Frames. This discrete manifold transforms localization from unconstrained 6-DoF regression into a **constrained selection problem** on the patient-specific anatomy.
+
+#### Airways Neighborhood Tracker (ANT)
+The ANT module performs **local tracking** by selecting the most likely position among candidate centerline points in the bronchoscope's neighborhood:
+- A **Spatio-Temporal Vision Transformer** (adapted from Genie) processes a window of video frames, capturing both spatial structure and temporal motion dynamics
+- A **Visual Odometry module** explicitly predicts frame-to-frame translation and rotation deltas
+- A **Local Map Encoder** projects nearby centerline candidates into a shared embedding space
+- **Cross-Attention** bridges the visual-motion features with geometric candidates — at inference the predicted position always lies exactly on the anatomical centerline
+
+#### Bronchial Intraoperative Route Discriminator (BIRD)
+The BIRD module provides **global reasoning** to correct drift and bifurcation errors:
+- A **Titans-based Neural Memory** maintains persistent state across the entire procedure, encoding the navigation history and computing a "surprise" signal at complex bifurcations
+- A **Global Map Encoder** processes the full airway centerline graph
+- **Global Cross-Attention** allows the memory to query the entire map, identifying if the trajectory needs correction
+- **Trajectory Refinement** uses attention-based selection with a soft distance penalty, enabling global corrections while maintaining local consistency
+
+#### Results
+<p align="center">
+<img src="/media/sim_phantom_results.png" width="600" /><br>
+Quantitative comparison on synthetic (A) and phantom (B) datasets. ATE in mm (left) and tracking time in ms/frame (right, log scale).
+</p>
+
+BronchoLoc is equal or better than the SOTA!
+- **100% topologically consistent** predictions, all poses lie on valid airway centerlines
+- Competitive or superior accuracy versus baselines that require **30x more expensive hardware** (48GB VRAM vs 16GB)
+- **Real-time capable** (>30 FPS) vs baselines requiring 0.4–2.7 seconds per frame
+- Robust on real phantom data collected with an Olympus BF-H190 bronchoscope
+
+#### BronchoSim — Open Source Simulator
 <p align="center">
 <img src="/media/bronchosim.png" width="600" /><br>
 </p>
+
+BronchoSim is a companion open-source simulator built on Panda3D for generating synthetic bronchoscopy datasets with ground truth 6-DoF poses and depth maps. It supports manual control, autopilot for dataset generation, and live mode for real-time visualization of external tracking algorithms. It also includes respiratory motion simulation to introduce realistic CT-to-body divergence.
+
 Overview of BronchoSim
 
-A) **System Architecture**: the input
-layer is composed of the patient’s anatomical data, user inputs,
-software args and sensors; these are fed to the main, which based on
-the modality selected by the user, starts the respective pipeline for
-dataset generation or live tracking; the output layer can include the
-generated synthetic dataset or the live trajectory of the bronchoscope
-during the procedure 
-
-B) Visualization of **BronchoSim outputs**:
-on the left the synthetic dataset generation exploring different
-branches of the lungs; on the right a conceptual illustration of the
-proposed bronchoscopy navigation system in a clinical setting. The
-system provides real-time visual feedback, displaying the localized
-bronchoscope within the patient’s 3D airway model on a monitor,
-assisting the physician during the procedure
+<small> Last Update: February, 2026 </small>
 <br><br><br>
 
 ## Contact Force Model for Soft Robots <span id="contact-force-model-for-soft-robots" style="margin-left: 10px;">[<i class="fa fa-file-code-o"></i>](https://github.com/em-ni/phd/tree/main/sim) </span> <span style="margin-left: 10px;">[<i class="fa fa-file-pdf-o"></i>]()</span>

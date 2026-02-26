@@ -19,15 +19,15 @@ permalink: /publications/
 ___
 **Prompt-to-State Stable Vision-Language MPC for Approximated Neural Network Dynamics**<br/>
 *E. Nicotra et al.*<br/>
-IEEE International Conference on Robotics and Automation (ICRA 2026) (Submitted)
+IEEE International Conference on Robotics and Automation (ICRA 2026)
 
-**BronchoSim: An Open-Source Bronchoscopy Simulator and a Novel Surgical Workflow combining Temporally Coherent Monocular Depth Estimation, SLAM and Anatomical Priors from CT scans**<br/>
+**End-to-end Learning-based Bronchoscope Tracking Enhanced with Medical CT Imaging and a Novel Open-Source Simulator**<br/>
 *E. Nicotra et al.*<br/>
-IEEE Transactions on Robotics (T-RO 2025) (Submitted)
+IEEE Transactions on Robotics (T-RO 2025)
 
 **Soft Robotic Catheter for Safe Aneurysm Treatment with Enhanced Kinematics and Contact Force Model**<br/>
 *E. Nicotra et al.* <br/>
-IEEE Transactions on Medical Robotics and Bionics (T-MRB 2024) (Under Review)
+IEEE Transactions on Medical Robotics and Bionics (T-MRB 2025)
 
 **A Micro-Robotic Catheter for Aneurysm Treatment: A Novel Design and Enhanced Euler-Bernoulli Model with Cross-Section Optimization**<br/>
 *E. Nicotra et al.* <br/>
@@ -39,6 +39,34 @@ IEEE Conference on Decision and Control (2022).
 
 ## Co-Author Publications
 ___
+**A Soft Robotic Model for Simulating Heart Valve Disease and Cardiac Interventions**<br/>
+*J. Davies, E. Nicotra et al.*<br/>
+Advanced Science (2026)
+
+**Motor-Free Soft Robots for Cancer Detection, Surgery, and In Situ Bioprinting**<br/>
+*C.C. Nguyen et al.*<br/>
+Advanced Healthcare Materials (2025)
+
+**Compliance Control with Dynamic and Self-Sensing Hydraulic Artificial Muscles for Wearable Assistive Devices**<br/>
+*B. Sharma, E. Nicotra et al.*<br/>
+IEEE International Conference on Robotics and Automation (ICRA 2025)
+
+**Model-Agnostic Fluidic Proprioception Framework for State Estimation and Precise Movement in Soft Musculoskeletal Robots**<br/>
+*B. Sharma et al.*<br/>
+Results in Engineering (2025)
+
+**A Soft Robotic Textile-Actuated Anthropomorphic Artificial Shoulder Mechanism**<br/>
+*B. Sharma et al.*<br/>
+Advanced Intelligent Systems (2025)
+
+**Development of a Bioinspired Soft Robotic System for Teleoperated Endoscopic Surgery**<br/>
+*K. Zhu et al.*<br/>
+Cyborg and Bionic Systems (2025)
+
+**Development of a Self-Deploying Extra-Aortic Compression Device for Medium-Term Hemodynamic Stabilization: A Feasibility Study**<br/>
+*A. Ji et al.*<br/>
+Advanced Science (2025)
+
 **Soft Robotic Artificial Left Ventricle Simulator Capable of Reproducing Myocardial Biomechanics**<br/>
 *J. Davies et al.*<br/>
 Science Robotics (2024)
@@ -51,9 +79,21 @@ Advanced Science (2024)
 *M.T. Thai et al.*<br/>
 Advanced Sensor Research (2024)
 
+**Soft Upper-Limb Wearable Robotic Devices: Technology and Applications**<br/>
+*B. Sharma et al.*<br/>
+Advanced Intelligent Systems (2024)
+
+**Development of a Smart Textile-Driven Soft Spine Exosuit for Lifting Tasks in Industrial Applications**<br/>
+*K. Zhu et al.*<br/>
+IEEE/SICE International Symposium on System Integration (SII 2024)
+
 **Robotic Cardiac Compression Device Using Artificial Muscle Filaments for the Treatment of Heart Failure**<br/>
 *P.T. Phan et al.*<br/>
 Advanced Intelligent Systems (2024)
+
+**A Smart, Textile-Driven, Soft Exosuit for Spinal Assistance**<br/>
+*K. Zhu et al.*<br/>
+Italian National Conference on Sensors (2023)
 
 **Hydraulically Actuated Soft Tubular Gripper**  <br/>
 *J. Davies et al.*    <br/>

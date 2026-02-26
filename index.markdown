@@ -18,7 +18,7 @@ layout: page
 
 Ciao! I am a PhD candidate at UNSW, Sydney. 
 
-I am interested in the intersection of robotics, control theory, and artificial intelligence
+I am interested in the intersection of robotics, control theory, and artificial intelligence and their application in minimally invasive surgery. 
 
 <br>
 <br>
@@ -28,7 +28,7 @@ I am interested in the intersection of robotics, control theory, and artificial 
 
 ## Timeline
 
-| Aug 2024 | Director at B0NE pty ltd
+| Aug 2024 | Senior Software Engineer at B0NE pty ltd
 | Feb 2023 | Started PhD at at UNSW, Sydney |
 | Apr 2022 | Using robots to fight cancer with hyperthermia treatment at Medlogix srl
 | Jan 2022 | Helped developing a self-balancing radar for a military ship at Fincantieri spa
